@@ -4,6 +4,6 @@
 
 augroup DimacsFiletype
     autocmd!
-    autocmd BufNewFile,BufRead *.dimacs,*.cnf,*.in set filetype=dimacs
+    autocmd BufNewFile,BufRead *.dimacs,*.cnf,*.in,*.qdimacs set filetype=dimacs
 augroup END
 

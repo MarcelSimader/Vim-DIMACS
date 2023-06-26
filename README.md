@@ -4,6 +4,12 @@ DIMACS support in Vim
 This plugin supports syntax highlighting and some basic file type settings for the
 SAT problem specification file format DIMACS.
 
+News
+------------------------------------------------------------------------------------------
+
+- `v0.2.0`
+  Added support for QDIMACS.
+
 How to Install
 ------------------------------------------------------------------------------------------
 
