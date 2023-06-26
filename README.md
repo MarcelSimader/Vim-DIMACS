@@ -7,6 +7,8 @@ SAT problem specification file format DIMACS.
 News
 ------------------------------------------------------------------------------------------
 
+- `v0.3.0`
+  Added support for traces.
 - `v0.2.0`
   Added support for QDIMACS.
 

@@ -12,7 +12,7 @@ endif
 " ~~~~~~~~~~~~~~~~~~~~ Syntax ~~~~~~~~~~~~~~~~~~~~
 
 " ~~~~~~~~~~ General
-syntax keyword DimacsKeywords p cnf CNF dnf DNF nnf NNF e a
+syntax keyword DimacsKeywords p cnf CNF dnf DNF nnf NNF e a s v V
             \ contained
 syntax match DimacsComment /^\s*c.*$/
 
@@ -33,6 +33,12 @@ syntax match   DimacsLiteral /-\?\d\+/
             \ contains=DimacsZero
 syntax keyword DimacsZero    0
             \ contained
+
+" ~~~~~~~~~~ Traces
+syntax match  DimacsSolutionSpecifier /^\s*s.*$/
+            \ contains=DimacsKeywords
+syntax match  DimacsSolutionLine      /^\s*[vV].*$/
+            \ contains=DimacsKeywords,DimacsLiteral
 
 " ~~~~~~~~~~~~~~~~~~~~ Highlight ~~~~~~~~~~~~~~~~~~~~
 
